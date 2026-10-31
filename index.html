@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>AICE Psychology Research Methods Lab</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app-shell">
+
+        <section class="hero">
+
+            <div class="hero-text">
+                <p class="course-tag">
+                    AICE Psychology
+                </p>
+
+                <h1>
+                    Research Methods Sorting Lab
+                </h1>
+
+                <p class="hero-subtitle">
+                    Sort each statement into the correct research method.
+                    This version is designed to feel more like a polished
+                    interactive study tool than a plain webpage.
+                </p>
+            </div>
+
+            <div class="hero-side">
+                <div class="mini-card">
+                    <span class="mini-label">Mode</span>
+                    <span class="mini-value">Practice Lab</span>
+                </div>
+
+                <div class="mini-card">
+                    <span class="mini-label">Goal</span>
+                    <span class="mini-value">12 / 12 Correct</span>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="control-panel">
+
+            <div class="status-group">
+
+                <div class="status-card">
+                    <span class="status-label">Correct</span>
+                    <span
+                        class="status-value"
+                        id="score">0</span>
+                </div>
+
+                <div class="status-card">
+                    <span class="status-label">Remaining</span>
+                    <span
+                        class="status-value"
+                        id="remaining">12</span>
+                </div>
+
+            </div>
+
+            <div class="button-group">
+                <button id="resetButton">
+                    Reset Activity
+                </button>
+            </div>
+
+        </section>
+
+
+        <section class="progress-section">
+            <div class="progress-text">
+                Progress
+            </div>
+
+            <div class="progress-bar">
+                <div
+                    id="progressFill"
+                    class="progress-fill"></div>
+            </div>
+        </section>
+
+
+        <section class="workspace">
+
+            <aside class="source-panel">
+
+                <div class="panel-header">
+                    <h2>
+                        Research Method Characteristics
+                    </h2>
+
+                    <p>
+                        Drag these into the correct category.
+                    </p>
+                </div>
+
+                <div
+                    id="cardBank"
+                    class="card-bank"></div>
+
+            </aside>
+
+
+            <section class="categories">
+
+                <div
+                    class="category"
+                    data-category="experiment">
+
+                    <div class="category-header">
+                        <h2>Experiment</h2>
+                        <p>
+                            Manipulates an independent variable and
+                            can investigate cause and effect.
+                        </p>
+                    </div>
+
+                    <div class="drop-zone"></div>
+                </div>
+
+
+                <div
+                    class="category"
+                    data-category="correlation">
+
+                    <div class="category-header">
+                        <h2>Correlation</h2>
+                        <p>
+                            Measures relationships between variables
+                            without manipulating an IV.
+                        </p>
+                    </div>
+
+                    <div class="drop-zone"></div>
+                </div>
+
+
+                <div
+                    class="category"
+                    data-category="self-report">
+
+                    <div class="category-header">
+                        <h2>Self-Report</h2>
+                        <p>
+                            Collects information directly from
+                            participants through questions.
+                        </p>
+                    </div>
+
+                    <div class="drop-zone"></div>
+                </div>
+
+
+                <div
+                    class="category"
+                    data-category="observation">
+
+                    <div class="category-header">
+                        <h2>Observation</h2>
+                        <p>
+                            Focuses on recording and interpreting
+                            observable behavior.
+                        </p>
+                    </div>
+
+                    <div class="drop-zone"></div>
+                </div>
+
+            </section>
+
+        </section>
+
+
+        <section
+            id="completionMessage"
+            class="completion-message">
+
+            <h3>
+                Psychology triumph achieved.
+            </h3>
+
+            <p>
+                All 12 characteristics have been sorted correctly.
+                Your neurons may now celebrate.
+            </p>
+
+        </section>
+
+
+        <footer>
+            Created by Marco Viteri | EME 6208 | AI-assisted version
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
